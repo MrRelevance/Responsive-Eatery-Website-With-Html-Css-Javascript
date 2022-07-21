@@ -40,6 +40,30 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll("section[id");
+
+function scrollActive() {
+	const scrollY = window.pageYOffset;
+
+	sections.forEach((section) => {
+		const sectionHeight = section.offsetHeight;
+		const sectionTop = section.offsetTop - 50;
+		sectionId = section.getAttribute("id");
+
+		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+			document
+				.querySelector(".nav__menu a[href*=" + sectionId + "]")
+				.classList.add("active-link");
+		} else {
+			document
+				.querySelector(".nav__menu a[href*=" + sectionId + "]")
+				.classList.remove("active-link");
+		}
+	});
+}
+window.addEventListener("scroll", scrollActive);
+
 /*==================== HIDE / SHOW HEADER ON SCROLL ====================*/
 // const body = document.body;
 // let lastScroll = 0;
@@ -82,31 +106,6 @@ let swiper = new Swiper(".service__cards", {
 	},
 });
 
-// const mediaQuery = window.matchMedia('(min-width: 576px)')
-
-// function handleTabletChange(e) {
-
-//     if (e.matches) {
-//         let swiper = new Swiper(".service__cards", {
-//             effect: "coverflow",
-//             grabCursor: true,
-//             centeredSlides: true,
-//             slidesPerView: "auto",
-//             loop: true,
-//             spaceBetween: 0,
-//             coverflowEffect: {
-//                 rotate: 0,
-//                 stretch: -90,
-//             },
-//         })
-//     }
-
-// }
-
-// mediaQuery.addEventListener(handleTabletChange)
-
-// handleTabletChange(mediaQuery)
-
 /*==================== MENU FILTER SECTION ====================*/
 const filterBtnsContainer = document.querySelector(".menu-filter");
 filterBtnsContainer.addEventListener("click", (e) => {
@@ -131,16 +130,6 @@ function filterItems(filterBtn) {
 		}
 
 		// if you're displaying all the items on the menu, you'll add this ( || selectedCategory === 'main') to the if statement as shown bellow. the 'main' most time is tend to be 'all'
-
-		/* ======================================================================================= */
-
-		// const category = item.getAttribute('data-category').split(',');
-		// if(category.indexOf(selectedCategory) !== -1 || selectedCategory === 'main') {
-		//     item.classList.add('show')
-		// }
-		// else{
-		//     item.classList.remove('show')
-		// }
 	});
 }
 // Filter Active Category Menu Item
