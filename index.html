@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Website Travel</title>
+    </head>
+    <body>
+        
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo stagger"> <img src="assets/img/logo.png" alt=""> </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item stagger">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item stagger">
+                            <a href="#menu" class="nav__link">Menu</a>
+                        </li>
+                        <li class="nav__item stagger">
+                            <a href="#special" class="nav__link">Specials</a>
+                        </li>
+                        <li class="nav__item stagger">
+                            <a href="#testimonials" class="nav__link">Testimonials</a>
+                        </li>
+                        <li class="nav__item stagger">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <i class='bx bx-x nav__close stagger' id="nav-close"></i>
+                </div>
+
+                <div class="place__order">
+                    <a href="#" class="order__btn stagger">Place an order</a>
+                </div>
+
+                <div class="nav__toggle stagger" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="main">
+
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/hero-img.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <div class="main__logo">
+                            <img src="assets/img/main-logo.png" alt="">
+                        </div>
+                        <h1 class="home__data-title">delicious<br>cooking</h1>
+                        <span class="home__data-subtitle">Experience the taste in every bite</span>
+                        <!-- <a href="#" class="button">Explore</a> -->
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about-long-image">
+                    <img src="/assets/img/home-bg-01.jpg" alt="">
+                </div>
+
+                <div class="about-right-image">
+                    <img src="/assets/img/home-bg-03.jpg" alt="">
+                </div>
+                <div class="about__container container grid">
+
+                    <div class="about__data grid">
+                        <div class="about__img">
+                            <img src="/assets/img/img1.png" alt="">
+                        </div>
+                        <h3 class="section__title about__title">Now enjoy a wonderful cafe dinning experience and healthy food</h3>
+                        <div>
+                            <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab placeat natus ipsa earum ea quod amet alias autem assumenda dolorum.</p>
+                            <a href="#" class="read-more">read more about us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== MENU ====================-->
+            <section class="section menu" id="menu">
+                <div class="container menu__container grid">
+                    <div class="menu-bg">
+                        <img src="/assets/img/home-bg-02.png" alt="">
+                    </div>
+
+                    <div class="menu__data">
+                        <div class="subtitle__data sub-trans">
+                            <span class="line"></span>
+                            <div class="subtitle">special recipes</div>
+                            <span class="line"></span>
+                        </div>
+                        <h2 class="section__title">Popular menu</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="menu-filter">
+                            <button type="button" title="Filter by Main" class="menu-filter-btn active" data-filter="main">main</button>
+                            <button type="button" title="Filter by Fries" class="menu-filter-btn" data-filter="fries">fries</button>
+                            <button type="button" title="Filter by Grill" class="menu-filter-btn" data-filter="grill">grill</button>
+                            <button type="button" title="Filter by Suya" class="menu-filter-btn" data-filter="suya">suya</button>
+                            <button type="button" title="Filter by Shawarma" class="menu-filter-btn" data-filter="shawarma">shawarma</button>
+                            <button type="button" title="Filter by Spring Roll" class="menu-filter-btn" data-filter="spring-rolls">spring rolls</button>
+                            <button type="button" title="Filter by Burger" class="menu-filter-btn" data-filter="burger">burger</button>
+                        </div>
+                    </div>
+                    <div class="row menu-items grid">
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="main,grill">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-1.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Shazzy Rice</h4>
+                                <p class="item-description">Long grained basmati rice made with chicken strip, eggs, carrots & bells peppers</p>
+                            </div>
+                            <div class="item-price">N2,500</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="fries,suya">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-2.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Pearly Rice</h4>
+                                <p class="item-description">Long grained basmati rice made with shrimps, beef strip, Chicken strip, Eggs, carrots, bells peppers & spring onions</p>
+                            </div>
+                            <div class="item-price">N2,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="main,shawarma,grill">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-3.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Intelligent Jollof Rice</h4>
+                                <p class="item-description">Long grained basmati rice made with our signature tomatoe souce, carrots & bell peppers</p>
+                            </div>
+                            <div class="item-price">N1,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="shawarma">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-4.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Native Rice</h4>
+                                <p class="item-description">Local rice made with kpomo, smoked fish, dried prawns & scent leaf</p>
+                            </div>
+                            <div class="item-price">N1,500</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="spring-rolls,main">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-5.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Stir Fried Spaghetti</h4>
+                                <p class="item-description">Spaghetti stir fried in our unique tomatoes sauce, with sausages and vegetables</p>
+                            </div>
+                            <div class="item-price">N2,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="burger">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-6.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Singapore Noodles (Pre-Order)</h4>
+                                <p class="item-description">Served with Prawns, Chicken Strip, Beaf Strip, Eggs & Vegetables</p>
+                            </div>
+                            <div class="item-price">N8,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="burger">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-7.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Sea Food Pasta (Pre-Order)</h4>
+                                <p class="item-description">Penne served with Prawns, calamary & Pesto in creamy sauce</p>
+                            </div>
+                            <div class="item-price">N8,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="suya,main">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-8.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Lamb Chops</h4>
+                                <p class="item-description">Lamb grilled to perfection served with our unique creamy sauce served with jollof rice or any side of your choice</p>
+                            </div>
+                            <div class="item-price">N8,500</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                        
+                        <!-- menu item start  -->
+                        <div class="menu-item" data-category="suya,burger,main">
+                            <div class="menu-item-grid">
+                            <div class="menu-item-thumbnail">
+                                <img class="thumb-img" src="/assets/img/menu-2.png" alt="Thumbnail">
+                            </div>
+                            <div class="item-data">
+                                <h4 class="item-name">Pearly Rice</h4>
+                                <p class="item-description">Long grained basmati rice made with shrimps, beef strip, Chicken strip, Eggs, carrots, bells peppers & spring onions</p>
+                            </div>
+                            <div class="item-price">N2,000</div>
+                            </div>
+                        </div>
+                        <!-- menu item end  -->
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== SPECIAL ====================-->
+            <section class="section special" id="special">
+                <div class="container special__contianer grid">
+                    <div class="special__data">
+                        <div class="special__data-anim">
+                            <div class="subtitle__data">
+                                <span class="line"></span>
+                                <div class="subtitle">peoples choice</div>
+                                <span class="line"></span>
+                            </div>
+                            <h2 class="section__title">Special dishes</h2>
+                        </div>
+
+                        <div class="special__boxes grid">
+                            <div class="s__box">
+                                <div class="s__box-img">
+                                    <img class="s__img" src="/assets/img/s1.jpg" alt="">
+                                    <div class="special__price">
+                                        <div class="cost-circle">
+                                            <div class="only">ONLY</div>
+                                            <div class="price">
+                                                <span>₦</span>57.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="special-dish-title">Shazzy Rice</h5>
+                                <p>Long grained basmati rice made with chicken strip, eggs, carrots & bells peppers</p>
+                            </div>
+
+                            <div class="s__box">
+                                <div class="s__box-img">
+                                    <img class="s__img" src="/assets/img/s2.jpg" alt="">
+                                    <div class="special__price">
+                                        <div class="cost-circle">
+                                            <div class="only">ONLY</div>
+                                            <div class="price">
+                                                <span>₦</span>57.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="special-dish-title">Intelligent Jollof Rice</h5>
+                                <p>Long grained basmati rice made with our signature tomatoe sauce, carrots & bell peppers</p>
+                            </div>
+
+                            <div class="s__box">
+                                <div class="s__box-img">
+                                    <img class="s-img" src="/assets/img/s3.jpg" alt="">
+                                    <div class="special__price">
+                                        <div class="cost-circle">
+                                            <div class="only">ONLY</div>
+                                            <div class="price">
+                                                <span>₦</span>57.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <h5 class="special-dish-title">Native Rice</h5>
+                                    <p>Local rice made with kpomo, smoked fish, dried prawns & scent leaf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== SERVICE ====================-->
+            <section class="section service">
+                <div class="services__container grid">
+                    <div class="service__data">
+                        <div class="service__data-anim">
+                            <div class="subtitle__data">
+                                <span class="line"></span>
+                                <div class="subtitle">cafe experience</div>
+                                <span class="line"></span>
+                            </div>
+                            <h2 class="section__title">exquisite services</h2>
+                        </div>
+                    </div>
+                    <div class=" container service__cards swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="service__card swiper-slide">
+                                <div class="service__card-img">
+                                    <img src="/assets/img/service-1.jpg" alt="">
+                                </div>
+                                <div class="service__card-content">
+                                    <div class="s-icon">
+                                        <i class='bx bx-cookie' ></i>
+                                    </div>
+                                    <span>food delivery</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="service__card swiper-slide">
+                                <div class="service__card-img">
+                                    <img src="/assets/img/service-2.jpg" alt="">
+                                </div>
+                                <div class="service__card-content">
+                                    <div class="s-icon">
+                                        <i class='bx bx-cookie' ></i>
+                                    </div>
+                                    <span>Best burgers</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="service__card swiper-slide">
+                                <div class="service__card-img">
+                                    <img src="/assets/img/service-3.jpg" alt="">
+                                </div>
+                                <div class="service__card-content">
+                                    <div class="s-icon">
+                                        <i class='bx bx-cookie' ></i>
+                                    </div>
+                                    <span>nice packaging</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="service__card swiper-slide">
+                                <div class="service__card-img">
+                                    <img src="/assets/img/service-2.jpg" alt="">
+                                </div>
+                                <div class="service__card-content">
+                                    <div class="s-icon">
+                                        <i class='bx bx-cookie' ></i>
+                                    </div>
+                                    <span>bar and lounge</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="section testimonial" id="testimonial">
+                <div class="container testimonial__container">
+                    <div class="testimonial__data">
+                        <div class="subtitle__data">
+                            <span class="line"></span>
+                            <div class="subtitle">happy testimonials</div>
+                            <span class="line"></span>
+                        </div>
+                        <h2 class="section__title">WHAT OUR CUSTOMERS SAY</h2>
+                    </div>
+
+                    <div class="testimonial__main">
+                        <div class="testimonial__card">
+                            <div class="t__card-text">
+                                <i class='bx bxs-quote-alt-right quote' ></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nihil?</p>
+                            </div>
+    
+                            <figure>
+                                <div class="client__img">
+                                    <img src="/assets/img/s3.jpg" alt="">
+                                </div>
+    
+                                <h4>
+                                    <span class="client__name">John Doe</span>
+                                    <div class="ratings">
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        </div>
+                                </h4>
+                                
+                            </figure>
+                        </div>
+    
+                        <div class="testimonial__card">
+                            <div class="t__card-text">
+                                <i class='bx bxs-quote-alt-right quote' ></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nihil?</p>
+                            </div>
+    
+                            <figure>
+                                <div class="client__img">
+                                    <img src="/assets/img/s3.jpg" alt="">
+                                </div>
+    
+                                <h4>
+                                    <span class="client__name">John Doe</span>
+                                    <div class="stars">
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        </div>
+                                </h4>
+                                
+                            </figure>
+                        </div>
+    
+                        <div class="testimonial__card">
+                            <div class="t__card-text">
+                                <i class='bx bxs-quote-alt-right quote' ></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nihil?</p>
+                            </div>
+    
+                            <figure>
+                                <div class="client__img">
+                                    <img src="/assets/img/s3.jpg" alt="">
+                                </div>
+    
+                                <h4>
+                                    <span class="client__name">John Doe</span>
+                                    <div class="stars">
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        <i class='bx bxs-star star'></i>
+                                        </div>
+                                </h4>
+                                
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FOOTER 2 ====================-->
+            <section class="section footer-two">
+                <div class="footer-two__images">
+                    <div class="f-t-img__data">
+                        <img src="/assets/img/f-1.jpg" alt="">
+                        <div>
+                            <span class="subtitle">loaded cheese</span>
+                            <h3>delicious<br>burger</h3>
+                            <a href="#" class="f-t-btn">place an order</a>
+                        </div>
+                    </div>
+
+                    <div class="f-t-img__data">
+                        <img src="/assets/img/f-2.jpg" alt="">
+                        <div>
+                            <span class="subtitle">loaded cheese</span>
+                            <h3>healthy cooking night</h3>
+                            <a href="#" class="f-t-btn">place an order</a>
+                        </div>
+                    </div>
+
+                    <div class="f-t-img__data">
+                        <img src="/assets/img/f-5.jpg" alt="">
+                        <div>
+                            <span class="subtitle">loaded cheese</span>
+                            <h3>barbecue<br>festival</h3>
+                            <a href="#" class="f-t-btn">place an order</a>
+                        </div>
+                    </div>
+
+                    <div class="f-t-img__data">
+                        <img src="/assets/img/f-4.jpg" alt="">
+                        <div>
+                            <span class="subtitle">loaded cheese</span>
+                            <h3>upcoming<br>food events</h3>
+                            <a href="#" class="f-t-btn">place an order</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact" id="contact">
+                <div class="container contact__container grid">
+                    <div class="home__contact">
+                        <i class='bx bxs-map-pin'></i>
+                        <h4>visit us</h4>
+                        <span>Block 3 Plot 14, Lekki County Home, Ikota</span>
+                    </div>
+
+                    <div class="home__contact">
+                        <i class='bx bx-phone-call' ></i>
+                        <h4>let's talk</h4>
+                        <span>08013 683 9547<br>0915 462 2365</span>
+                    </div>
+
+                    <div class="home__contact">
+                        <i class='bx bx-envelope' ></i>
+                        <h4>email info</h4>
+                        <span>info@onegrand.com.ng<br>onegrand@gmail.com</span>
+                    </div>
+                    
+                    <div class="home__contact">
+                        <i class='bx bx-planet' ></i>
+                        <h4>event details</h4>
+                        <span>Free for any events at the moment</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== GSAP 3.0 ===============-->
+        <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
